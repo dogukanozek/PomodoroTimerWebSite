@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(186, 73, 73) !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.pomodoro{
+  color: white;
+  font-size: 75px;
+  font-weight: bold;
+}
+.main {
+  width: 50%;
+  height: 70%;
+}
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.button-container {
+  display: flex;
+  
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.timer p  {
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
+}
+.timer-start {
+  /* background-color: white !important; */
+  height: 25%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  font-size: 50px !important;
+  font-weight: bold !important;
+  transition: 0.3s !important;
+}
+
+.dotime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  color:white;
+  font-size: 20px;
+  
+}
+.dotime:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.pomodoro-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+}
+.btn-outline-light:hover {
+  color: #ed3d60 !important;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.btn-outline-light:active {
+  transform: scale(0.97);
+}
+.bodychange{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(73, 186, 186) !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.bodychange2{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(74, 114, 186) !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
