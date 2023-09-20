@@ -3,8 +3,9 @@ const Timer = document.querySelector(".timer p"); //Timer
 const top_buttons1 = document.querySelector(".btn-top-1"); //pomodoro button
 const top_buttons2 = document.querySelector(".btn-top-2"); //short break
 const top_buttons3 = document.querySelector(".btn-top-3"); //long break
+auido=new Audio("alarm.wav");
 let time = 1500; //25 minutes by seconds
-let oldtime=0;
+let oldtime=1500;
 const pomodorodes = document.querySelector(".pomodoro-description");
 const countpomo = document.querySelector(".dotime p");
 
@@ -34,6 +35,7 @@ function resetTimer() {
 }
 
 StartButton.addEventListener("click", () => {
+  
   console.log(top_buttons1);
   if (!isPomodoroRunning && time!=0) {
     isPomodoroRunning = true;
@@ -41,6 +43,7 @@ StartButton.addEventListener("click", () => {
     countdown = setInterval(() => {
       time--;
       if (time == 0) {
+        auido.play();
         clearInterval(countdown);
         isPomodoroRunning = false;
         if(oldtime==1500){
@@ -69,6 +72,7 @@ top_buttons1.addEventListener("click", () => {
   document.body.classList.remove("bodychange");
 });
 top_buttons2.addEventListener("click", () => {
+  auido.pause();
   StartButton.textContent = "Start";
   clearInterval(countdown);
   isPomodoroRunning = false;
@@ -85,6 +89,7 @@ top_buttons2.addEventListener("click", () => {
   document.body.classList.add("bodychange");
 });
 top_buttons3.addEventListener("click", () => {
+  auido.pause();
   clearInterval(countdown);
   isPomodoroRunning = false;
   StartButton.textContent = "Start";
