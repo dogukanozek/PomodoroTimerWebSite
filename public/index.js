@@ -35,12 +35,12 @@ function resetTimer() {
 
 StartButton.addEventListener("click", () => {
   console.log(top_buttons1);
-  if (!isPomodoroRunning) {
+  if (!isPomodoroRunning && time!=0) {
     isPomodoroRunning = true;
     StartButton.textContent = "Pause";
     countdown = setInterval(() => {
       time--;
-      if (time < 0) {
+      if (time == 0) {
         clearInterval(countdown);
         isPomodoroRunning = false;
         if(oldtime==1500){

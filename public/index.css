@@ -119,3 +119,32 @@ body {
   flex-direction: column;
   transition: 0.5s;
 }
+@media screen and (max-width: 768px) {
+  
+  .pomodoro{
+    font-size: 50px;
+    text-align: center;
+  }
+  .timer-start{
+    font-size: 30px !important  ;
+    width: 50%;
+    
+    text-align: center;
+    
+  }
+  .timer p{
+    font-size: 60px;
+  }
+  .button-container{
+    
+  }
+  .main{
+    width: 90%;
+  }
+}
+@media screen and (max-width:600px) {
+  .btn-top-1,.btn-top-2,.btn-top-3{
+    font-size: 12px !important;
+    padding:0px !important;
+  }
+}
